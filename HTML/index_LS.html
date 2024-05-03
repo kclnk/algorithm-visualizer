@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search.</title>
+    <link rel="stylesheet" href="../CSS/styles_LS.css">
+</head>
+<body>
+    <div>
+        <a id="home" href="../index.html">Home</a>
+    </div>
+    <header>Linear Searching Algorithm</header>
+    <div id="container"></div>
+    <div id="buttons_array">
+        <button id="array_button" onclick="initialize_array()">  Generate Array  </button>
+    </div>
+
+    <div id="buttons_search">
+        <div id="field_and_search_button">
+            <button id="search_button" onclick="search_button()">  Search  </button>
+            <input placeholder="Search Key!" type="text" id="search_key_field" name="text_field" required="required">
+        </div>
+    </div>
+    <div id="message">
+        <p id="error_message"></p>
+        <p id="run_time_message"></p>
+    </div>
+    <script src="../JS/script_LS.js"></script>
+</body>
+</html>

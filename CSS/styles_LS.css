@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    padding: 2rem;
+}
+
+#container {
+    padding: 10rem 0 0 0;
+    display: flex;
+    justify-content:center;
+    align-items: center
+}
+
+.item {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    /*background-color: #817f7f;*/
+    background-color: #222;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(200, 205, 210);
+    transition: 0.3s;
+}
+
+.item:hover {
+    background-color: rgba(208, 203, 61, 0.15);
+}
+
+.item:last-child{
+    margin-right: 0;
+}
+
+button {
+    margin-right: 1rem ;
+    border-radius: 3rem;
+
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15);
+
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(200, 205, 210);
+
+    border-style: none;
+    background-color: rgba(0,0,0,00);
+    transition: 0.30s;
+}
+
+#buttons_search {
+    padding: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons_array {
+    padding: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#array_button {
+    height: 4rem;
+    width: 21rem;
+
+    font-weight: bold;
+}
+
+#array_button:hover {
+    background-color: rgb(72, 154, 117);
+    color: rgb(35, 35, 35);
+
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 15px rgba(51, 108, 82, 0.722),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(47, 100, 76, 0.722);
+}
+
+#array_button:active {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(72, 154, 117, 0.6),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(72, 154, 117, 0.6);
+    transition: 0.002s;
+    background-color: rgba(72, 154, 117, 0);
+    color: rgb(200, 205, 210);
+}
+
+#search_button:hover {
+    background-color: rgb(134, 93, 183);
+
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 15px rgba(105, 53, 90, 0.772),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(105, 53, 90, 0.772);
+
+    color: rgb(35, 35, 35);
+}
+
+#search_button:active {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(134, 93, 183, 0.6),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(134, 93, 183, 0.6);
+    transition: 0.002s;
+    background-color: rgba(134, 93, 183, 0);
+    color: rgb(200, 205, 210);
+}
+
+#search_button {
+    height: 4rem;
+    width: 10rem;
+    font-weight: bold;
+}
+
+input {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15);
+
+    font-size: 2.188rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(200, 205, 210);
+
+    border-style: none;
+    background-color: rgba(0,0,0,00);
+    border-radius: 3rem;
+    border-style: none;
+
+    width: 20rem;
+    height: 4rem;
+
+    overflow: hidden;
+    cursor:text;
+
+    padding-left: 2rem
+}
+
+
+#message {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    padding-top: 3rem;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(203, 40, 40);
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(200, 205, 210);
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+#home {
+    color: rgb(200, 205, 210);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+#run_time_message {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
+#error_message {
+    display: flex;
+    justify-content: center;
+}
